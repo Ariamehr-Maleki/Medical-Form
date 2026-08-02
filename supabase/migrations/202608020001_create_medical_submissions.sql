@@ -1,4 +1,5 @@
-create extension if not exists pgcrypto;
+create schema if not exists extensions;
+create extension if not exists pgcrypto with schema extensions;
 
 create table public.medical_submissions (
   id uuid primary key default gen_random_uuid(),
@@ -16,7 +17,7 @@ create table public.medical_submissions (
 
 alter table public.medical_submissions
   add constraint medical_submissions_checksum_matches_content
-    check (csv_sha256 = encode(digest(convert_to(csv_content, 'UTF8'), 'sha256'), 'hex')),
+    check (csv_sha256 = encode(extensions.digest(convert_to(csv_content, 'UTF8'), 'sha256'), 'hex')),
   add constraint medical_submissions_normalized_shape
     check (
       normalized_data ?& array['name','age','gender','bloodType','medicalCondition','admissionDate','doctor','hospital','insuranceProvider','billingAmount']
