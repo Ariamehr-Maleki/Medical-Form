@@ -1,0 +1,2 @@
+-- PulseVault intentionally ships no automatic database seed.
+-- Use tests/fixtures/synthetic-medical-record.csv through the authenticated UI.
