@@ -7,7 +7,7 @@ PulseVault is a polished interview demonstration of secure, validated medical-da
 > **Demonstration only:** PulseVault is not a clinical system and must not be used for clinical decisions or real patient information. A real healthcare deployment requires formal privacy, security, compliance, retention, audit, incident-response, and vendor reviews. This project does **not** claim HIPAA compliance.
    
 ## Stack
-
+  
 - Next.js 16 App Router, React 19, strict TypeScript, Tailwind CSS 4
 - Supabase SSR Auth and PostgreSQL with RLS
 - Zod 4, React Hook Form, Papa Parse, Lucide
