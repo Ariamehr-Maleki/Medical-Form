@@ -1,6 +1,6 @@
 # PulseVault 
 
-For the complete hosted Supabase, email, GitHub, and Vercel checklist, see DEPLOYMENT.md.
+For the complete hosted Supabase, email, GitHub, and Vercel checklist, see DEPLOYMENT.md. 
     
 PulseVault is a polished interview demonstration of secure, validated medical-data intake. Verified users submit one fictional admission record, the same strict schema validates it in the browser and on the server, and the exact RFC 4180-compatible CSV plus a SHA-256 checksum is saved through the authenticated Supabase session. PostgreSQL Row Level Security keeps history, preview, and downloads owner-only.
         
