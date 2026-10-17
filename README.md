@@ -1,4 +1,4 @@
-# PulseVault
+# PulseVault 
 
 For the complete hosted Supabase, email, GitHub, and Vercel checklist, see DEPLOYMENT.md.
 
